@@ -1,6 +1,6 @@
 // ===== CONFIGURATION =====
-const GIST_ID   = 'YOUR_GIST_ID';
-const USERNAME  = 'YOUR_GITHUB_USERNAME';
+const GIST_ID   = 'ad9c6c624b9463877fb7915e279c01cf';
+const USERNAME  = 'Comnerd3';
 const FILENAME  = 'live-content.json';
 const POLL_MS    = 5000;
 // =========================
