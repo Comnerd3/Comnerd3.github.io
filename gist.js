@@ -1,5 +1,5 @@
 // ===== CONFIGURATION =====
-const GIST_ID   = 'ad9c6c624b9463877fb7915e279c01cf';
+const GIST_ID   = '2e16288a05ef65299d56ad5393c1b05c';
 const USERNAME  = 'Comnerd3';
 const FILENAME  = 'live-content.json';
 const POLL_MS    = 5000;
