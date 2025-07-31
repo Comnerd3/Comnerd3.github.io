@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Display</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    #content { font-size: 2rem; color: #333; }
+  </style>
+</head>
+<body>
+  <div id="content">Loading...</div>
+
+  <script src="gist.js"></script>
+  <script>
+    const display = document.getElementById('content');
+
+    async function refresh() {
+      try {
+        const json = await gsGet();
+        display.textContent = json.content;
+      } catch (e) {
+        console.error('Fetch error:', e);
+      }
+    }
+
+    // Initial load + periodic polling
+    refresh();
+    setInterval(refresh, POLL_MS);
+  </script>
+</body>
+</html>
